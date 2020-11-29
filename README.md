@@ -11,8 +11,6 @@
 ```php
 <?php
 
-    require __DIR__ . '/../vendor/autoload.php';
-
     use alglyzin\Json\Json;
 
     $json = '  {
