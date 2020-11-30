@@ -14,7 +14,7 @@
         public static function float_safe($json)
         {
             $regexp = '/"(\s*)\:(\s*)(\-?\d+([eE][\+|\-]?\d+|\.\d+)+)(\s*[,(\s*)|\}])/';
-            $json_string = preg_replace($regexp, "$1:$2\"$3\"$5", $json);
+            $json_string = preg_replace($regexp, "\"$1:$2\"$3\"$5", $json);
             
             if ($json_string === null) {
                 $message = 'An error occurred when converting a json string';
